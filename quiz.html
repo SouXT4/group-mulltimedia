@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scams Awareness - Quiz</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="knowledge.html">Learn more</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+				<li><button id="theme-toggle" class="dark-mode-button" aria-label="Toggle Dark Mode">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 id="headerquiz">Test Your Knowledge</h1>
+        <!-- Button to start the quiz -->
+        <button id="start-quiz">Start Quiz</button>
+
+        <!-- Quiz container: Hidden initially -->
+        <div id="quiz-container" style="display: none;">
+            <div id="quiz-questions"></div>
+            <!-- Button to try again during quiz (hidden initially) -->
+            <button id="try-again-during-quiz" style="display: none;">Try Again</button>
+            <!-- Button to end the quiz -->
+            <button id="end-quiz">Submit Quiz</button>
+        </div>
+
+        <!-- Quiz results section: Hidden initially -->
+        <div id="quiz-results" style="display: none;">
+            <h2>Your Results</h2>
+            <p id="quiz-score"></p>
+            <p id="quiz-message"></p>
+            <!-- Button to try again after quiz -->
+            <button id="try-again">Try Again</button>
+        </div>
+    </main>
+    <button id="back-to-top" aria-label="Back to Top">↑ Back to Top</button>
+    <footer>
+        <p>© 2025 Scams Awareness. All rights reserved.</p>
+    </footer>
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/back-to-top.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/quiz.js"></script>
+</body>
+</html>
